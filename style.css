@@ -1,0 +1,42 @@
+ /*
+Oficialny CSS ze Strony Lingos.pl
+
+*/
+.btn:not([class^=btn-outline-]):not([class*=" btn-outline-"]):not(.btn-secondary):not(.btn-light):not(.btn-link) {
+    --ar-btn-color: #0000009e;
+}
+
+[data-bs-theme="dark"] body.bg-secondary {
+    background: #000000 url('https://giffiles.alphacoders.com/147/147110.gif') center center / cover no-repeat fixed !important;
+    background-color: #000000 !important;
+}
+
+.card {
+    --ar-card-spacer-y: 2.375rem;
+    --ar-card-spacer-x: 2.375rem;
+    --ar-card-title-spacer-y: 1rem;
+    --ar-card-title-color: var(--ar-gray-900);
+    --ar-card-border-width: var(--ar-border-width);
+    --ar-card-border-color: var(--ar-border-color);
+    --ar-card-border-radius: var(--ar-border-radius-xxl);
+    --ar-card-inner-border-radius: calc(var(--ar-border-radius-xxl) - (var(--ar-border-width)));
+    --ar-card-cap-padding-y: 1.5rem;
+    --ar-card-cap-padding-x: 2.375rem;
+    --ar-card-cap-bg: transparent;
+    --ar-card-color: var(--ar-body-color);
+    --ar-card-bg: #00000075;
+    --ar-card-img-overlay-padding: 1rem;
+    --ar-card-group-margin: 0.75rem;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--ar-card-height);
+    color: var(--ar-body-color);
+    word-wrap: break-word;
+    background-color: var(--ar-card-bg);
+    background-clip: border-box;
+    border: var(--ar-card-border-width) solid var(--ar-card-border-color);
+    border-radius: var(--ar-card-border-radius);
+}
